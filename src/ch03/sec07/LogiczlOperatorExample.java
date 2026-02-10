@@ -2,8 +2,9 @@ package ch03.sec07;
 
 public class LogiczlOperatorExample {
     public static void main(String[] args) {
-        int charCode = 'A';
-
+        //int charCode = 'A';
+        //int charCode = 'a';
+        int charCode = '5';
         if( (65<=charCode) & (charCode<=90) ) {
             System.out.println("대문자이군요.");
         }
