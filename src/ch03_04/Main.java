@@ -2,15 +2,16 @@ package ch03_04;
 
 public class Main {
     public static void main(String[] args) {
-
-        Notification no = new EmailNotification();
-        no.send("gjwnsgur20@gmail.com");
-
-        Notification no1 = new SmsNotification();
-        no.send("meassge");
-
-        Notification no2 = new SlackNotification();
-        no.send("slcal");
+        NotificationService service1 = new NotificationService(
+                new Notification() {
+                    @Override
+                    public void send(String message) {
+                        System.out.println("[이메일]");
+                    }
+                }
+        );
+        service1.notifyUser("안녕");
+        service1.notifyUser("안녕");
     }
 }
 
