@@ -2,9 +2,6 @@ package ch18.sec06;
 
 import java.io.*;
 
-import static java.lang.module.ModuleDescriptor.read;
-import static java.nio.file.Files.write;
-
 public class CharacterConverStreamExample {
     public static void main(String[] args) throws Exception {
         write("문자 변환 스트림을 사용합니다.");
